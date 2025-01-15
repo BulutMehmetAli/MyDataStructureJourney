@@ -169,8 +169,25 @@ Node *deleteBeforeNode(Node *head , int position){
 
 }
 
-Node *deleteSpecificLocation(Node *head , int location){
+Node *deleteLastNode(Node *head){
 
+    if(head == nullptr){
+        cout <<   "List is empty" << endl;
+        return nullptr;
+    }
+    if(head->next == nullptr){
+            delete head;
+            return  head;
+    }
+    Node *temp = head;
+    while(temp->next->next!=nullptr){
+        temp=temp->next;
+    }
+
+    delete temp->next;
+    temp->next = nullptr;
+
+    return head;
 }
 
 void displayList(Node *head){
@@ -213,9 +230,13 @@ int main()
     displayList(head);
 
 
-    int deletePositionbefore = 4;
+    int deletePositionbefore = 2;
     cout << "Deleted at position node before  : " << deletePositionbefore << endl;
     head = deleteBeforeNode(head ,deletePositionbefore);
+    displayList(head);
+
+    cout << "Deleted last node " << endl;
+    head = deleteLastNode(head);
     displayList(head);
 
     return 0;
