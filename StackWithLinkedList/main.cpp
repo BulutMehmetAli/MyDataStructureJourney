@@ -54,7 +54,7 @@ public:
         cout << "Upper data:" << top->data << endl;
     }
 
-    bool search(int value) const {
+    bool searchStack(int value) const {
         Node* current = top;
         while (current != nullptr) {
             if (current->data == value) {
@@ -67,7 +67,7 @@ public:
         return false;
     }
 
-    void reverse() {
+    void reverseStack() {
         Node* prev = nullptr;
         Node* current = top;
         Node* nextNode = nullptr;
@@ -129,22 +129,22 @@ int main() {
     myStack.push(30);
     myStack.display();
 
-    cout << "Stack boyutu: " << myStack.getSize() << endl;
+    cout << "Stack dimension: " << myStack.getSize() << endl;
 
-    myStack.search(20);
-    myStack.search(50);
+    myStack.searchStack(20);
+    myStack.searchStack(50);
 
-    myStack.reverse();
+    myStack.reverseStack();
     myStack.display();
 
-    int* array = myStack.toArray();
-    if (array != nullptr) {
-        cout << "Dizi elemanlarý: ";
+    int* newArray = myStack.toArray();
+    if (newArray != nullptr) {
+        cout << "Array values: ";
         for (int i = 0; i < myStack.getSize(); i++) {
-            cout << array[i] << " ";
+            cout << newArray[i] << " ";
         }
         cout << endl;
-        delete[] array;
+        delete[] newArray;
     }
 
     return 0;
