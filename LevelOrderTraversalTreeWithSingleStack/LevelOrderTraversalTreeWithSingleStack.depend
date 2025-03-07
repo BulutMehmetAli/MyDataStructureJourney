@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1741012266 source:c:\users\bulut\onedrive\masaüstü\dsa\ds\tree\levelordertraversaltreewithsinglestack\main.cpp
+	<iostream>
+	<stack>
+
