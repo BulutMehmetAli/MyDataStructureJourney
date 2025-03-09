@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1741091971 source:c:\users\bulut\onedrive\masaüstü\dsa\ds\tree\levelordertraversaltreewithqueue\main.cpp
+	<iostream>
+	<queue>
+	<vector>
+
