@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1741322677 source:c:\users\bulut\onedrive\masaüstü\dsa\fileorganization\lottreewithdoublestack\main.cpp
+	<iostream>
+	<stack>
+	<vector>
+
+1741324557 source:c:\users\bulut\onedrive\masaüstü\dsa\ds\tree\lottreewithdoublestack\main.cpp
+	<iostream>
+	<stack>
+	<vector>
+
