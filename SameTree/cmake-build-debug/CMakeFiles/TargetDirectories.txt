@@ -1,0 +1,3 @@
+D:/Projects/SameTree/cmake-build-debug/CMakeFiles/SameTree.dir
+D:/Projects/SameTree/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Projects/SameTree/cmake-build-debug/CMakeFiles/rebuild_cache.dir
